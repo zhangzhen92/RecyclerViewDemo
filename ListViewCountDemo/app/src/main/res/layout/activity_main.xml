@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <ScrollView
+        android:id="@+id/scrollview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_id"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"></android.support.v7.widget.RecyclerView>
+
+         <TextView
+             android:id="@+id/textview_more"
+             android:layout_gravity="center_horizontal"
+             android:text="查看更多"
+             android:textSize="20sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+
+
+
+       <TextView
+           android:text="    Adapter：使用RecyclerView之前，你需要一个继承自RecyclerView.Adapter的适配器，作用是将数据与每一个item的界面进行绑定。
+
+    LayoutManager：用来确定每一个item如何进行排列摆放，何时展示和隐藏。回收或重用一个View的时候，LayoutManager会向适配器请求新的数据来替换旧的数据，这种机制避免了创建过多的View和频繁的调用findViewById方法（与ListView原理类似）。
+目前SDK中提供了三种自带的LayoutManager:"
+           android:textColor="#000"
+           android:textSize="16sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>
